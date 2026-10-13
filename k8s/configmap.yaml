@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: api-config
+  namespace: desafio
+data:
+  DB_HOST: postgres-service
+  DB_PORT: "5432"
+  DB_NAME: meubanco
+  PORT: "3000"
+  ENVIRONMENT: production
